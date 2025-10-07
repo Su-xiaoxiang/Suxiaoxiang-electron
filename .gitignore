@@ -1,6 +1,10 @@
 node_modules
 dist
 electron-react-template
+electron-react-template/bin
+electron-react-template/template
+electron-react-template/package.json
+electron-react-template/README.md
 out/
 .idea
 .vscode

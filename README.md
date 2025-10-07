@@ -1,7 +1,8 @@
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Electron + React + Vite + TypeScript 桌面应用模板</h1>
-<h4 align="center">现代化、高性能的 Electron 桌面应用开发框架，让桌面应用开发变得简单、高效、优雅！</h4>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">create-electron-su</h1>
+<h4 align="center">现代化、高性能的 Electron + React 桌面应用开发脚手架，让桌面应用开发变得简单、高效、优雅！</h4>
 <p align="center">
-	<a href="#"><img src="https://img.shields.io/badge/version-1.0.3-green?style=flat-square"></a>
+	<a href="https://www.npmjs.com/package/create-electron-su"><img src="https://img.shields.io/npm/v/create-electron-su.svg?style=flat-square"></a>
+	<a href="https://www.npmjs.com/package/create-electron-su"><img src="https://img.shields.io/npm/dt/create-electron-su.svg?style=flat-square"></a>
 	<a href="#"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"></a>
 	<a href="#"><img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript"></a>
 	<a href="#"><img src="https://img.shields.io/badge/Vite-7.0-purple?style=flat-square&logo=vite"></a>
@@ -9,19 +10,104 @@
 	<a href="#"><img src="https://img.shields.io/badge/Electron-38.0-blue?style=flat-square&logo=electron"></a>
 	<a href="#"><img src="https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat-square&logo=tailwind-css"></a>
 </p>
+<p align="center">
+	<a href="https://github.com/Su-xiaoxiang/Suxiaoxiang-electron" target="_blank">GitHub 仓库</a> | 
+	<a href="https://www.npmjs.com/package/create-electron-su" target="_blank">npm 包</a>
+</p>
 
 ---
 
-## 📦 项目介绍
+## 📦 下载方式
 
-这是一个基于 Electron + React 19 + Vite 7 + TypeScript 5 的现代化桌面应用开发框架，集成了当前最流行的技术栈和最佳实践，旨在为开发者提供高效、可维护、可扩展的桌面应用开发解决方案。
+### 方式一：通过 GitHub 下载
+
+#### 1. 克隆仓库
+```bash
+# 克隆主仓库
+git clone https://github.com/Su-xiaoxiang/Suxiaoxiang-electron.git
+
+# 进入项目目录
+cd Suxiaoxiang-electron
+```
+
+#### 2. 安装依赖
+```bash
+# 使用 npm
+npm install
+
+# 使用 yarn
+yarn install
+
+# 使用 pnpm
+pnpm install
+```
+
+#### 3. 启动开发服务器
+```bash
+# 启动 Electron 开发环境（同时启动 Vite 服务器和 Electron 应用）
+npm run electron:dev
+```
+
+#### 4. 访问应用
+运行开发命令后，Electron 应用会自动启动并加载本地开发服务器。
+
+### 方式二：通过 npm 下载
+
+#### 1. 使用 CLI 工具创建项目
+```bash
+# 使用 npm create
+npm create electron-su
+
+# 使用 npx
+npx create-electron-su
+
+# 使用 yarn create
+yarn create electron-su
+
+# 使用 pnpm create
+pnpm create electron-su
+```
+
+#### 2. 交互式配置
+CLI 工具会引导您完成以下配置：
+- 项目名称（如果未在命令行指定）
+- 是否覆盖已存在的目录
+
+#### 3. 自动完成项目创建
+CLI 工具会自动：
+- 创建项目目录结构
+- 复制所有模板文件
+- 更新 package.json 中的项目名称
+
+#### 4. 开始开发
+```bash
+# 进入项目目录
+cd my-app
+
+# 启动 Electron 开发环境
+npm run electron:dev
+```
+
+### 两种方式的对比
+
+| 特性 | GitHub 克隆 | npm CLI |
+|------|-------------|---------|
+| **适用场景** | 学习源码、二次开发 | 快速创建新项目 |
+| **操作复杂度** | 需要手动配置 | 一键创建 |
+| **自定义程度** | 完全自定义 | 基于模板 |
+| **更新维护** | 需要手动同步 | 自动获取最新版本 |
+| **推荐用户** | 开发者、贡献者 | 普通用户 |
+
+## 🚀 框架介绍
+
+create-electron-su 是一个现代化的 Electron + React 桌面应用开发脚手架，集成了当前最流行的技术栈和最佳实践。通过这个脚手架，您可以快速创建功能完备的桌面应用程序。
 
 ### 核心特性
 
 - **🚀 现代化构建** —— 基于 Vite 7 的极速构建，支持热更新、代码分割、Tree Shaking
 - **📱 响应式设计** —— 基于 Tailwind CSS 的响应式设计系统，适配各种设备
-- **🔧 TypeScript 支持** —— 完整的 TypeScript upport，提供类型安全和智能提示
-- **🖥️ 桌面应用** —— 基于 Electron 的跨平台桌面应用支持
+- **🔧 TypeScript 支持** —— 完整的 TypeScript 支持，提供类型安全和智能提示
+- **🖥️ 桌面应用** —— 基于 Electron 38 的跨平台桌面应用支持
 - **📊 状态管理** —— 集成 Redux Toolkit 的轻量级状态管理
 - **🌐 API 封装** —— 基于 Axios 的 API 请求封装，支持拦截器、错误处理
 - **🔍 开发工具** —— 集成 ESLint 等开发工具，保证代码质量
@@ -55,19 +141,6 @@ src/
 
 - Node.js >= 18.0.0
 - npm >= 8.0.0 或 yarn >= 1.22.0 或 pnpm >= 7.0.0
-
-### 安装依赖
-
-```bash
-# 使用 npm
-npm install
-
-# 使用 yarn
-yarn install
-
-# 使用 pnpm
-pnpm install
-```
 
 ### 启动开发服务器
 
@@ -173,5 +246,3 @@ npm run electron:buildLinux
   <p>如果这个项目对您有帮助，请给我们一个 ⭐️</p>
   <p>Made with ❤️ by Suxiaoxiang</p>
 </div>
-
-

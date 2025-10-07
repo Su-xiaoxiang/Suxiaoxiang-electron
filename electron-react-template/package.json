@@ -1,6 +1,6 @@
 {
   "name": "create-electron-su",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "创建一个现代化的 React+Electron 项目，包含 TypeScript、Vite、Tailwind CSS AntiDesign",
   "type": "module",
   "main": "index.js",
