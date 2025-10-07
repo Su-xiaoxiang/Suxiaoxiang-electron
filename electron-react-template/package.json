@@ -1,0 +1,58 @@
+{
+  "name": "create-electron-su",
+  "version": "1.0.1",
+  "description": "创建一个现代化的 React+Electron 项目，包含 TypeScript、Vite、Tailwind CSS AntiDesign",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "create-react-su": "bin/create-electron-su.js"
+  },
+  "files": [
+    "bin/",
+    "template/"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "redux",
+    "template",
+    "scaffold",
+    "cli",
+    "create-react-app",
+    "boilerplate",
+    "脚手架",
+    "electron"
+  ],
+  "author": "Suxiaoxiang",
+  "license": "MIT",
+  "dependencies": {
+      "@reduxjs/toolkit": "^2.8.2",
+      "antd": "^5.26.7",
+      "autoprefixer": "^10.4.21",
+      "axios": "^1.11.0",
+      "echarts": "^5.6.0",
+      "electron-squirrel-startup": "^1.0.1",
+      "postcss": "^8.4.41",
+      "react": "^19.1.0",
+      "react-dom": "^19.1.0",
+      "react-redux": "^9.2.0",
+      "tailwindcss": "^3.4.10"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Su-xiaoxiang/Suxiaoxiang-electron"
+  },
+  "bugs": {
+    "url": "https://github.com/Su-xiaoxiang/Suxiaoxiang-electron/issues"
+  },
+  "homepage": "https://github.com/Su-xiaoxiang/Suxiaoxiang-electron#readme",
+  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}
